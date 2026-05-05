@@ -31,12 +31,13 @@ a {
   text-decoration: none;
 }
 
+/* PARTE SUPERIOR */
 .hero {
   min-height: 100vh;
   padding: 24px;
   background:
-    radial-gradient(circle at top left, rgba(231, 165, 58, 0.45), transparent 35%),
-    radial-gradient(circle at bottom right, rgba(184, 74, 47, 0.2), transparent 30%),
+    radial-gradient(circle at top left, rgba(231, 165, 58, 0.35), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(184, 74, 47, 0.18), transparent 30%),
     var(--bg);
 }
 
@@ -54,14 +55,16 @@ a {
   align-items: center;
 }
 
+/* LOGO ARREGLADO */
 .brand-logo {
-  max-width: 245px;
-  width: 100%;
+  width: 135px;
   height: auto;
   display: block;
-  filter: drop-shadow(0 10px 18px rgba(80, 48, 24, 0.12));
+  object-fit: contain;
+  filter: drop-shadow(0 8px 14px rgba(80, 48, 24, 0.10));
 }
 
+/* BOTONES */
 .nav-button,
 .primary-button,
 .secondary-button {
@@ -71,6 +74,7 @@ a {
   border-radius: 999px;
   padding: 12px 20px;
   font-weight: 700;
+  font-size: 14px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -93,9 +97,10 @@ a {
   box-shadow: var(--shadow);
 }
 
+/* HERO */
 .hero-content {
   max-width: 1100px;
-  margin: 90px auto 0;
+  margin: 55px auto 0;
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   align-items: center;
@@ -111,17 +116,18 @@ a {
   border-radius: 999px;
   font-weight: 700;
   margin-bottom: 18px;
+  font-size: 14px;
 }
 
 .hero h2 {
-  font-size: clamp(42px, 8vw, 82px);
-  line-height: 0.95;
+  font-size: clamp(42px, 7vw, 72px);
+  line-height: 0.98;
   margin: 0 0 18px;
   letter-spacing: -2px;
 }
 
 .hero-text p {
-  font-size: 20px;
+  font-size: 19px;
   color: var(--muted);
   max-width: 640px;
 }
@@ -156,13 +162,14 @@ a {
 }
 
 .quote {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 800;
   line-height: 1.25;
   position: relative;
   z-index: 1;
 }
 
+/* SECCIONES */
 .section {
   max-width: 1050px;
   margin: 0 auto;
@@ -197,6 +204,7 @@ a {
   display: grid;
   place-items: center;
   font-weight: 800;
+  flex-shrink: 0;
 }
 
 .section-title h2 {
@@ -230,6 +238,7 @@ a {
   margin-top: 0;
 }
 
+/* TEST */
 .quiz {
   margin-top: 30px;
   display: grid;
@@ -255,6 +264,7 @@ a {
   display: none;
 }
 
+/* COMPROMISO */
 .commitment {
   text-align: left;
 }
@@ -279,6 +289,7 @@ a {
   color: var(--primary-dark);
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 28px;
@@ -286,18 +297,36 @@ footer {
   color: white;
 }
 
+/* CELULAR */
 @media (max-width: 780px) {
+  .hero {
+    padding: 18px;
+  }
+
   .nav {
     align-items: center;
   }
 
   .brand-logo {
-    max-width: 170px;
+    width: 95px;
   }
 
   .hero-content {
     grid-template-columns: 1fr;
-    margin-top: 56px;
+    margin-top: 38px;
+    gap: 32px;
+  }
+
+  .hero h2 {
+    font-size: 46px;
+  }
+
+  .hero-text p {
+    font-size: 17px;
+  }
+
+  .quote {
+    font-size: 22px;
   }
 
   .cards-grid,
@@ -307,5 +336,9 @@ footer {
 
   .commitment-box {
     flex-direction: column;
+  }
+
+  .section-title h2 {
+    font-size: 27px;
   }
 }
