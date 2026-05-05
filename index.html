@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akamaya | Conecta con tu mundo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">
+        <img class="brand-logo" src="AKAMAYA Conecta con tu mundo.png" alt="Logo de Akamaya - Conecta con tu mundo" />
+      </div>
+      <a href="#test" class="nav-button">Hacer test</a>
+    </nav>
+
+    <section class="hero-content">
+      <div class="hero-text">
+        <span class="badge">Campaña intercultural escolar</span>
+        <h2>Tu origen no te hace menos.</h2>
+        <p>
+          Una propuesta digital para reflexionar sobre la discriminación hacia
+          migrantes internos y promover la empatía dentro del aula.
+        </p>
+        <div class="hero-actions">
+          <a href="#campana" class="primary-button">Conocer campaña</a>
+          <a href="#compromiso" class="secondary-button">Mi compromiso</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <p class="quote">“No te burles de mi forma de hablar; mi voz también cuenta una historia.”</p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="campana" class="section">
+      <div class="section-title">
+        <span>01</span>
+        <h2>¿De qué trata la campaña?</h2>
+      </div>
+      <p>
+        <strong>Akamaya – Conecta con tu mundo</strong> busca sensibilizar a estudiantes
+        de secundaria sobre la importancia de respetar la diversidad cultural.
+        La migración interna no debe verse como un motivo de burla, sino como una
+        historia de esfuerzo, identidad y aprendizaje.
+      </p>
+
+      <div class="cards-grid">
+        <article class="info-card">
+          <h3>Respeto</h3>
+          <p>Reconocer que cada estudiante tiene una historia familiar y cultural valiosa.</p>
+        </article>
+        <article class="info-card">
+          <h3>Empatía</h3>
+          <p>Ponerse en el lugar de quien recibe burlas por su acento, origen o costumbres.</p>
+        </article>
+        <article class="info-card">
+          <h3>Convivencia</h3>
+          <p>Construir un aula donde nadie sienta vergüenza de su identidad.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="section-title">
+        <span>02</span>
+        <h2>¿Cómo aparece la discriminación?</h2>
+      </div>
+
+      <div class="examples">
+        <div>
+          <h3>En frases cotidianas</h3>
+          <p>“Hablas raro”, “pareces del campo”, “no eres de aquí”.</p>
+        </div>
+        <div>
+          <h3>En burlas</h3>
+          <p>Imitar el acento, reírse del idioma o poner apodos por el origen.</p>
+        </div>
+        <div>
+          <h3>En exclusión</h3>
+          <p>No incluir a alguien en trabajos o grupos porque viene de otra región.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="test" class="section">
+      <div class="section-title">
+        <span>03</span>
+        <h2>ConectaTest: ¿cómo convives con la diversidad?</h2>
+      </div>
+      <p>
+        Responde estas preguntas de forma honesta. No es una nota, es una forma
+        de pensar cómo actuamos frente a la diferencia.
+      </p>
+
+      <form id="quiz" class="quiz">
+        <div class="question">
+          <h3>1. Si escuchas que se burlan del acento de un compañero, ¿qué haces?</h3>
+          <label><input type="radio" name="q1" value="0" required> Me río porque todos se están riendo.</label>
+          <label><input type="radio" name="q1" value="1"> No digo nada, aunque me incomode.</label>
+          <label><input type="radio" name="q1" value="2"> Le digo al grupo que no está bien burlarse.</label>
+        </div>
+
+        <div class="question">
+          <h3>2. Un estudiante nuevo viene de otra región. ¿Cómo actuarías?</h3>
+          <label><input type="radio" name="q2" value="0" required> Lo ignoro porque no lo conozco.</label>
+          <label><input type="radio" name="q2" value="1"> Espero a que alguien más le hable.</label>
+          <label><input type="radio" name="q2" value="2"> Lo saludo y lo integro al grupo.</label>
+        </div>
+
+        <div class="question">
+          <h3>3. Para ti, respetar la diversidad significa:</h3>
+          <label><input type="radio" name="q3" value="0" required> Solo no meterse con nadie.</label>
+          <label><input type="radio" name="q3" value="1"> Aceptar que todos son diferentes.</label>
+          <label><input type="radio" name="q3" value="2"> Valorar las diferencias y actuar con respeto.</label>
+        </div>
+
+        <button type="submit" class="primary-button">Ver resultado</button>
+      </form>
+
+      <div id="result" class="result hidden"></div>
+    </section>
+
+    <section id="compromiso" class="section commitment">
+      <div class="section-title">
+        <span>04</span>
+        <h2>Mi compromiso</h2>
+      </div>
+      <p>
+        Escribe una frase que puedas cumplir para mejorar la convivencia en tu curso.
+      </p>
+
+      <div class="commitment-box">
+        <input id="commitmentInput" type="text" placeholder="Ej: Me comprometo a no burlarme del origen de mis compañeros." />
+        <button id="saveCommitment" class="secondary-button">Guardar frase</button>
+      </div>
+
+      <p id="savedCommitment" class="saved"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Campaña académica de sensibilización intercultural | Akamaya 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
